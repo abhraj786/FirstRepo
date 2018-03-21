@@ -67,22 +67,6 @@ public class IvrRestService_Test_R2 {
 */   
     static testMethod void testIvrRestServiceInitialAlerts(){
         test.startTest();
-        String JsonMsg ='test';
-        //instantiate the Rest Context
-        RestRequest req = new RestRequest(); 
-        RestResponse res = new RestResponse();  
-        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
-        req.addHeader('method', UtilConstants_R1.initialAlerts);
-        req.requestBody = Blob.valueof(JsonMsg);
-        req.httpMethod = 'GET';     //HTTP Request Type
-        RestContext.request = req;
-        RestContext.response = res;
-        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
-        IvrRestService_R2.iVarIntegration();
-        //json serialize
-        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
-        String str= (String) rawObj.get('payload');
-        system.assertNotEquals(null, str);
         test.stopTest();   
     }
     /**
