@@ -1,0 +1,805 @@
+@isTest(seealldata=false)
+public class IvrRestService_Test_R2 {
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Roll Backs callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceRollBack(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.rollbacks);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Active Duty Alerts callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceActiveDutyAlerts(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.activeDutyAlerts);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Initial Alerts callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceInitialAlerts(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.initialAlerts);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Extended Alert CDI's callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceExtendedAlertCdis(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.extendedAlertCdis);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Initial Alert CDI's callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceInitialAlertCdis(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.initialAlertCdis);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Add On Scores callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceAddOnScores(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.ADDONSCORES);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Freezes callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceFreezes(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.FREEZES);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Paid Freezes callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServicePaidFreezes(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.PAIDFREEZES);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Thaws callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceThaws(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.THAWS);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Paid CDI's callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServicePiadCDI(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.PAIDCDI);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Scores callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceScores(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.SCORES);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Declined CDIS callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceDeclinedCDIS(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.DECLINEDCDIS);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Pin Remainders callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServicePinRemainders(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.PINREMINDERS);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Paid Lifts callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServicePaidLifts(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.PAIDLIFTS);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Lifts callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceLifts(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.LIFTS);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test Lifts callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServicePaidThaws(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.PAIDTHAWS);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test FREESTATECDIS callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceFreeStateCDIS(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.FREESTATECDIS);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 04/09/2017
+* @description This method will test PROMOCDIS callout.
+* @return void 
+*/   
+    static testMethod void testIvrRestServicePromoCDIS(){
+        test.startTest();
+        String JsonMsg ='test';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.PROMOCDIS);
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);
+        test.stopTest();   
+    }
+    
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Kawaljeet Bagga (kawbagga@deloitte.com) 
+* @date 10/09/2017
+* @description This method will test Credit Profile File One API callout when SFDC Customer Exist.
+* @return void 
+*/   
+    /*
+static testMethod void testIvrRestServiceFILEOneAPiForSFDCCust(){
+test.startTest();
+String strSsn = '098098123';
+EncryptDecryptHandler_R1 objEncryptDecryptHandler = new EncryptDecryptHandler_R1();
+String strSSNHash = objEncryptDecryptHandler.getHashedData(strSsn);
+
+List<Account> lstAccount = TestDataUtil_R1.createPersonAccountList(1, false);
+lstAccount[0].Credit_Report_Pull_Flag_R2__c = false;
+lstAccount[0].Freeze_Status_R2__c = UtilConstants_R1.INACTIVE; 
+lstAccount[0].Security_Alert_Status_R2__c = UtilConstants_R1.ACTIVE; 
+lstAccount[0].Do_Not_Combine_R2__c = true;
+lstAccount[0].Consumer_Pin_R2__c = 123456789;
+lstAccount[0].SSN_SHIELD__pc = strSsn;
+lstAccount[0].SSN_Corvette_Hashed__pc = strSSNHash;
+
+
+insert lstAccount;
+system.assertNotEquals(null,lstAccount[0].id);
+
+String JsonMsg ='{"strSsn" : "098098123"}';
+//instantiate the Rest Context
+RestRequest req = new RestRequest(); 
+RestResponse res = new RestResponse();  
+req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+req.addHeader('method', UtilConstants_R1.FILEONECRSFDCCUSTEXIST);
+req.addHeader('recordId', String.valueOf(lstAccount[0].id));
+req.addHeader('TRANSACTION_ID', '12345');
+req.requestBody = Blob.valueof(JsonMsg);
+req.httpMethod = 'POST';     //HTTP Request Type
+RestContext.request = req;
+RestContext.response = res;
+IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+IvrRestService_R2.iVarIntegration();
+test.stopTest(); 
+}
+*/
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Himanshu Parashar (hparashar@deloitte.com) 
+* @date 10/31/2017
+* @description This method will test NIS Document search
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceNisSearch(){
+        test.startTest();
+        String JsonMsg ='{}';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method','documentsearch');
+        req.addHeader('test-mock-method','documentsearch');
+        
+        //req.addHeader('ECS_CustomerID', String.valueOf(lstAccount[0].id));
+        //req.addHeader('SSN', String.valueOf(lstAccount[0].id));
+        //req.addHeader('Name', String.valueOf(lstAccount[0].id));
+        //req.addHeader('CAPID', String.valueOf(lstAccount[0].id));
+        Test.setMock(HttpCalloutMock.class, new MockHttpResponseDesigner_R1());
+        
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'POST';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        
+        String str= (String) rawObj.get('payload');
+        
+        List<object> ls = (List<object>) System.JSON.deserializeUntyped(str);
+        
+        Map<String,Object> err = (Map<String,Object>) ls[0];
+        
+        System.assertEquals('ECS_CustomerID Required',err.get('msg'));
+        test.stopTest();   
+    }
+    
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Himanshu Parashar (hparashar@deloitte.com) 
+* @date 10/31/2017
+* @description This method will test NIS Document search
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceNisSearchWithParameters(){
+        test.startTest();
+        
+        String JsonMsg ='{}';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method','documentsearch');
+        req.addHeader('test-mock-method','documentsearch');
+        req.addHeader('test-mock-method','documentsearch');
+        
+        req.addHeader('ECS_CustomerID', 'xxx');
+        req.addHeader('SSN', 'xxx');
+        req.addHeader('Name', 'xxx');
+        req.addHeader('CAPID', 'xxx');
+        Test.setMock(HttpCalloutMock.class, new MockHttpResponseDesigner_R1());
+        
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'POST';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        
+        String str= (String) rawObj.get('payload');
+        
+        //Map<String,Object> err = (Map<String,Object>) ls[0];
+        
+        //System.assertEquals('ECS_CustomerID Required',err.get('msg'));
+        
+        test.stopTest();   
+        
+    }
+    
+    
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Himanshu Parashar (hparashar@deloitte.com) 
+* @date 10/31/2017
+* @description This method will test NIS Document search
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceExpressRequest(){
+        test.startTest();
+        String JsonMsg ='{}';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method','expressrequest');
+        req.addHeader('test-mock-method','expressrequest');
+        
+        Test.setMock(HttpCalloutMock.class, new MockHttpResponseDesigner_R1());
+        
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'POST';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        
+        String str= (String) rawObj.get('payload');
+        
+        List<object> ls = (List<object>) System.JSON.deserializeUntyped(str);
+        
+        Map<String,Object> err = (Map<String,Object>) ls[0];
+        
+        System.assertEquals('SSN Required',err.get('msg'));
+        test.stopTest();   
+    }
+    
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Himanshu Parashar (hparashar@deloitte.com) 
+* @date 10/31/2017
+* @description This method will test express request search
+* @return void 
+*/   
+    static testMethod void testIvrRestServiceExpressRequestWithParams(){
+        test.startTest();
+        String JsonMsg ='{}';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method','expressrequest');
+        req.addHeader('test-mock-method','expressrequest');
+        req.addHeader('ssn','123456789');
+        req.addHeader('subcode','343');
+        
+        Test.setMock(HttpCalloutMock.class, new MockHttpResponseDesigner_R1());
+        
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'POST';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        
+        System.assertEquals(true,(Boolean) rawObj.get('isSuccess'));
+        
+        test.stopTest();   
+    }
+    
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 11/03/2017
+* @description This method will test express request search
+* @return void 
+*/   
+    static TestMethod void testFileOne(){
+        test.startTest();
+        String strToken = FileoneRestAPIClient_R2.getAccessToken();
+        system.assertEquals(null, strToken);
+        test.stopTest();
+    }
+    
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 11/03/2017
+* @description This method will test express request search
+* @return void 
+*/   
+    static testMethod void testCreditResponse(){
+        
+        String strSsn = '123456789';
+        String json = '{"strFirstName": "Jonh 2", "strLastName": "Beniof 2","strSsn": "786-78-7776" }';
+        EncryptDecryptHandler_R1 objEncryptDecryptHandler = new EncryptDecryptHandler_R1();
+        String strSSNHash = objEncryptDecryptHandler.getHashedData(strSsn);
+        List<Account> lstAccount = TestDataUtil_R1.createPersonAccountList(1, false);
+        lstAccount[0].Credit_Report_Pull_Flag_R2__c = false;
+        lstAccount[0].Freeze_Status_R2__c = UtilConstants_R1.INACTIVE; 
+        lstAccount[0].Security_Alert_Status_R2__c = UtilConstants_R1.ACTIVE; 
+        lstAccount[0].Do_Not_Combine_R2__c = true;
+        lstAccount[0].SSN_SHIELD__pc = strSsn;
+        lstAccount[0].SSN_Corvette_Hashed__pc = strSSNHash;
+        insert lstAccount;
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.FILEONECRSFDCCUSTEXIST);
+        req.requestBody = Blob.Valueof(json);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        test.startTest();
+        Test.setMock(HttpCalloutMock.class, new MockHttpResponseDesigner_R1(true));
+        IvrRestService_R2.iVarIntegration();
+        system.assertNotEquals(null, lstAccount);
+        test.stopTest();   
+    }
+    /**
+* Property of Experian. Do not distribute without permission.
+* Copyright (c) [2017] Experian, its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* @date 11/03/2017
+* @description This method will test express request search
+* @return void 
+*/   
+    static testMethod void testFullcreditcard(){
+        
+        String JsonMsg ='{"cardNumber":"1234123412341234"}';
+        //instantiate the Rest Context
+        RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', 'fullcreditcard');
+        req.requestBody = Blob.valueof(JsonMsg);
+        req.httpMethod = 'GET';     //HTTP Request Type
+        RestContext.request = req;
+        RestContext.response = res;
+        test.startTest();
+        IvrRestService_R2 objIvrRest = new IvrRestService_R2();
+        IvrRestService_R2.iVarIntegration();
+        //json serialize
+        Map<String,Object> rawObj = (Map<String,Object>) JSON.deserializeUntyped(res.responseBody.toString());
+        String str= (String) rawObj.get('payload');
+        system.assertNotEquals(null, str);        
+        test.stopTest();   
+    }
+    
+}
