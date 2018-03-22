@@ -1,9 +1,9 @@
 @isTest(seealldata=false)
 public class IvrRestService_Test_R2 {
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Roll Backs callout.
 * @return void 
@@ -30,9 +30,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Active Duty Alerts callout.
 * @return void 
@@ -58,9 +58,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Initial Alerts callout.
 * @return void 
@@ -70,9 +70,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Extended Alert CDI's callout.
 * @return void 
@@ -98,9 +98,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Initial Alert CDI's callout.
 * @return void 
@@ -126,9 +126,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Add On Scores callout.
 * @return void 
@@ -154,9 +154,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Freezes callout.
 * @return void 
@@ -182,9 +182,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Paid Freezes callout.
 * @return void 
@@ -210,9 +210,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Thaws callout.
 * @return void 
@@ -238,9 +238,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Paid CDI's callout.
 * @return void 
@@ -266,9 +266,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Scores callout.
 * @return void 
@@ -294,9 +294,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Declined CDIS callout.
 * @return void 
@@ -322,9 +322,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Pin Remainders callout.
 * @return void 
@@ -350,9 +350,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Paid Lifts callout.
 * @return void 
@@ -378,9 +378,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Lifts callout.
 * @return void 
@@ -406,9 +406,9 @@ public class IvrRestService_Test_R2 {
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test Lifts callout.
 * @return void 
@@ -433,9 +433,9 @@ public class IvrRestService_Test_R2 {
         system.assertNotEquals(null, str);        test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test FREESTATECDIS callout.
 * @return void 
@@ -462,9 +462,9 @@ public class IvrRestService_Test_R2 {
     }
     
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 04/09/2017
 * @description This method will test PROMOCDIS callout.
 * @return void 
@@ -491,9 +491,9 @@ public class IvrRestService_Test_R2 {
     }
     
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Kawaljeet Bagga (kawbagga@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Kawaljeet Bagga (kawbagga@.com) 
 * @date 10/09/2017
 * @description This method will test Credit Profile File One API callout when SFDC Customer Exist.
 * @return void 
@@ -536,9 +536,9 @@ test.stopTest();
 }
 */
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Himanshu Parashar (hparashar@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Himanshu Parashar (hparashar@.com) 
 * @date 10/31/2017
 * @description This method will test NIS Document search
 * @return void 
@@ -580,9 +580,9 @@ test.stopTest();
     }
     
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Himanshu Parashar (hparashar@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Himanshu Parashar (hparashar@.com) 
 * @date 10/31/2017
 * @description This method will test NIS Document search
 * @return void 
@@ -627,9 +627,9 @@ test.stopTest();
     
     
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Himanshu Parashar (hparashar@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Himanshu Parashar (hparashar@.com) 
 * @date 10/31/2017
 * @description This method will test NIS Document search
 * @return void 
@@ -667,9 +667,9 @@ test.stopTest();
     }
     
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Himanshu Parashar (hparashar@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Himanshu Parashar (hparashar@.com) 
 * @date 10/31/2017
 * @description This method will test express request search
 * @return void 
@@ -704,9 +704,9 @@ test.stopTest();
     }
     
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 11/03/2017
 * @description This method will test express request search
 * @return void 
@@ -719,9 +719,9 @@ test.stopTest();
     }
     
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 11/03/2017
 * @description This method will test express request search
 * @return void 
@@ -757,9 +757,9 @@ test.stopTest();
         test.stopTest();   
     }
     /**
-* Property of Experian. Do not distribute without permission.
-* Copyright (c) [2017] Experian, its affiliates and their licensors.
-* @author Bhanuchandar Nedium (bnedium@deloitte.com) 
+* Property of . Do not distribute without permission.
+* Copyright (c) [2017] , its affiliates and their licensors.
+* @author Bhanuchandar Nedium (bnedium@.com) 
 * @date 11/03/2017
 * @description This method will test express request search
 * @return void 
