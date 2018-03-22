@@ -1,0 +1,6 @@
+    RestRequest req = new RestRequest(); 
+        RestResponse res = new RestResponse();  
+        req.requestURI = '/services/apexrest/mce/ivrcalls';       //Request URL
+        req.addHeader('method', UtilConstants_R1.rollbacks);
+        req.requestBody = Blob.valueof(JsonMsg);
+	Abhishek
